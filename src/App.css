@@ -1,0 +1,52 @@
+body {
+  background: rgba(82, 5, 5, 0.955);
+  /* background-image: url(./background-of-red-cinema-sofa-with-nobody-6YDFH8F.jpg); */
+  color: white;
+}
+
+.movie-app {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.row {
+  flex-wrap: nowrap;
+  width: 30%;
+  flex-shrink: 0;
+}
+
+.fav-row {
+  flex-wrap: nowrap;
+  width: 100%;
+  min-width: 50px;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: auto;
+  transition: .5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.fav-heading {
+  margin-top: 150px;
+}
